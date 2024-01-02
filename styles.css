@@ -118,7 +118,7 @@ button:hover{
     justify-content: flex-end;
     flex-wrap: wrap;
     align-items: center;
-    bottom: 0;
+    bottom: 0svh;
 }
 .landing-info img{
     height: 30px;
@@ -207,14 +207,18 @@ meta {
     content: width=device-width, initial-scale=1.0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
+
+}
+
+/* @media (max-width: 1024px) {
     .logo {
-        height: 60px; /* Adjust for smaller screens */
+        height: 60px; 
         margin: 5px;
     }
 
     .landing-text {
-        width: 100%; /* Adjust as needed for smaller screens */
+        width: 100%; 
     }
     .landing-text-infos {
         font-size: 20px;
@@ -237,20 +241,34 @@ meta {
         font-size: 18px;
     }
 
+} */
+
+@media (max-width: 900px) {
+
 }
-@media (max-width: 700px) {
+
+@media (max-width: 768px) {
+    .circle{
+        display: none;
+    }
+    header {
+        padding: 10px 1vh;
+    }
     .nav-contact{
         font-size: 12px;
         padding: 3px;
     }
-
+    .nav-links li{
+        padding: 0 15px;
+    }
     nav ul li a{
-        font-size: 12px;
+        font-size: 20px;
     }
 
     .logo {
-        height: 50px; /* Adjust for smaller screens */
-        margin: 5px;
+        width: 150px;
+        height: 80px;
+        margin-left: 1vh;
     }
     .level{
         margin-left: 2.5vh;
@@ -261,6 +279,14 @@ meta {
         padding-left: 2.5vh;
         font-size: 18px;
         width: 100%;
+    }
+    .landing-text-infos h1{
+        font-size: 30px;
+
+    }
+    .images img{
+        width: 20px;
+        height: 20px;
     }
     .animation-container{
         display: none;
@@ -275,6 +301,82 @@ meta {
         height: 15px;
         width: 15px;
         margin: .5vh 1vh;
+    }
+}
+
+@media (max-width: 600px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 320px) {
+    .circle{
+        display: none;
+    }
+    header{
+        padding: 10px 1.5vh;
+    }
+    nav ul li a{
+        font-size: 10px;
+    }
+    .nav-links li {
+        padding: 1px 9px;
+    }
+    button{
+        font-size: 10px;
+        padding: 3px 5px;
+        margin-left: 5px;
+    }
+    .images input[type="button"] {
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+    }
+    
+    .logo {
+        width: 70px;
+        height: 50px; 
+        margin: 0;
+    }
+    .level{
+        margin-left: 1vh;
+        font-size: 1vh;
+    }
+    .landing-text-infos{
+        padding-top: 3vh;
+        padding-left: 2.5vh;
+        font-size: 18px;
+        width: 100%;
+    }
+    .landing-text-infos h1{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    .images{
+        margin-top: 10px;
+    }
+    .images img{
+        width: 20px;
+        height: 20px;
+        margin-right: ;
+    }
+    .animation-container{
+        display: none;
+    }
+    .level span{
+        font-size: 2vh;
+    }
+    .landing-info{
+        padding-right: 1vh;
+        height: 40px;
+    }
+    .landing-info img{
+        height: 15px;
+        width: 15px;
+        margin: .5vh .5vh;
     }
 }
 /* about */
