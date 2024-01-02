@@ -94,6 +94,9 @@ button:hover{
     width: 50%;
     height: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .landing-text-infos h1{
@@ -305,7 +308,71 @@ meta {
 }
 
 @media (max-width: 600px) {
-
+    .circle{
+        display: none;
+    }
+    header{
+        padding: 10px 1.5vh;
+    }
+    nav ul li a{
+        font-size: 10px;
+    }
+    .nav-links li {
+        padding: 1px 9px;
+    }
+    button{
+        font-size: 10px;
+        padding: 3px 5px;
+        margin-left: 5px;
+    }
+    .images input[type="button"] {
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+    }
+    
+    .logo {
+        width: 70px;
+        height: 50px; 
+        margin: 0;
+    }
+    .level{
+        margin-left: 1vh;
+        font-size: 1vh;
+    }
+    .landing-text-infos{
+        padding-top: 3vh;
+        padding-left: 2.5vh;
+        font-size: 18px;
+        width: 100%;
+    }
+    .landing-text-infos h1{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    .images{
+        margin-top: 10px;
+    }
+    .images img{
+        width: 20px;
+        height: 20px;
+        margin-right: ;
+    }
+    .animation-container{
+        display: none;
+    }
+    .level span{
+        font-size: 2vh;
+    }
+    .landing-info{
+        padding-right: 1vh;
+        height: 40px;
+    }
+    .landing-info img{
+        height: 15px;
+        width: 15px;
+        margin: .5vh .5vh;
+    }
 }
 
 @media (max-width: 480px) {
