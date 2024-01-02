@@ -11,6 +11,8 @@
 }
 
 body{
+    min-height: 100vh;
+    min-height: 100svh;
     min-height: 30%;
     background-color: #1a1a1d;
     font-family: 'Sawarabi', sans-serif;
@@ -87,7 +89,6 @@ button:hover{
     flex-direction: row;
 }
 .landing-text-infos{
-    padding-top: 13vh;
     padding-left: 12vh;
     font-size: 30px;
     font-family: 'Sawarabi';
@@ -188,7 +189,7 @@ button:hover{
 }
 
 .images input[type="button"]{
-    width: 150px;
+    width: 180px;
     height: 50px;
     font-family: 'Sawarabi';
     font-size: 24px;
