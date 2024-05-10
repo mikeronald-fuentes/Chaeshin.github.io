@@ -256,6 +256,24 @@ button:hover{
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #1A1A1D 90%);
     z-index: 1; /* Ensures the gradient is above the image */
 }
+
+.scroll-container {
+    height: 100vh; /* Set the height to the full viewport height */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scroll-snap-type: y mandatory; /* Enable vertical scroll snapping */
+}
+#landing, #about, #projects, #contact{
+    height: 100vh; /* Each section fills the viewport */
+    scroll-snap-align: start;
+}
+
+.about-container, .about-me-pic{
+    /* width: 80%; */
+    /* opacity: 0; Initially hidden */
+    transition: opacity 1s ease-out; /* Transition for the fade-in effect */
+    transform: translateY(20px); /* Start slightly downward */
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
 @keyframes float {
     0%, 100% {
         transform: translateY(0);

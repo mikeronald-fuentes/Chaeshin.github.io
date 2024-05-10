@@ -107,3 +107,32 @@ function animateCircles() {
 
 animateCircles();
 
+document.addEventListener("scroll", function() {
+  const sections = document.querySelectorAll('about-container', 'about-me-pic');
+
+  sections.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+      const sectionHeight = section.getBoundingClientRect().height;
+
+      if (sectionTop <= (window.innerHeight || document.documentElement.clientHeight) - sectionHeight / 3) {
+          section.style.opacity = 1;
+          section.style.transform = 'translateY(0)';
+      }
+  });
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href');
+      const targetSection = document.querySelector(targetId);
+
+      if (targetSection) {
+          targetSection.scrollIntoView({ 
+              behavior: 'smooth'
+          });
+      }
+  });
+});
+
