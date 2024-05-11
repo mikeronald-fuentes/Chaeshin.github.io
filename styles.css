@@ -334,12 +334,17 @@ button:hover{
     height: 85%;
  }
 
-#projects {
+#projects , #contact{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     padding-top: 10px;
+}
+
+.projects-container-title {
+    font-family: 'Sawarabi';
+    font-size: 30px;
 }
 
 .projects-container {
@@ -356,8 +361,8 @@ button:hover{
     margin-top: 30px; 
     display: flex; 
     flex-direction: row; 
-    justify-content:
-    space-between; width: 100%; 
+    justify-content: space-evenly; 
+    width: 100%; 
     height: 400px;
 }
 
@@ -446,6 +451,100 @@ button:hover{
     
     margin-right: 10px;
 }
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px 0 20px;
+}
+
+#contact-form input, #contact-form textarea{
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Sawarabi';
+}
+
+#contact-form button{
+    width: 80%;
+}
+.contact-container {
+    width: 90%; 
+    height: 80%; 
+    margin-top: 10%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    background-color: #eee;
+    border-radius: 50px;
+}
+
+
+h2 {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-container-left{
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.contact-container-left h1{
+    font-family: 'Sawarabi';
+    font-size: 25px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    color:#1a1a1a;
+}
+
+.info-name, .info-email, .info-phonenumber {
+    font-family: 'Sawarabi';
+    color: #1a1a1a;
+}
+.info-name{
+    font-size: 25px;
+}
+.info-email{
+    font-size: 35px;
+}
+
+.info-phonenumber{
+    font-size: 30px;
+}
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 10%;
+    height: 10%;
+}
+
+.footer-content {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 @keyframes float {
     0%, 100% {
         transform: translateY(0);

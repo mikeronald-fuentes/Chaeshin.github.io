@@ -136,5 +136,29 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent default form submission
+
+  // Get form data
+  var formData = new FormData(event.target);
+
+  // Display loading message
+  var statusMessage = document.getElementById("status-message");
+
+  // Send form data using Fetch API
+  fetch("https://formspree.io/f/xzbnwebk", {
+      method: "POST",
+      body: formData
+  })
+  .then(response => {
+      if (response.ok) {
+          // If request is successful, display success message
+          statusMessage.textContent = "Message sent successfully!";
+      } else {
+          // If request fails, display error message
+          statusMessage.textContent = "Failed to send message. Please try again later.";
+      }
+  })
+});
 
 

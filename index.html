@@ -50,7 +50,6 @@
                 </h1>
                 <div class="images">
                     <a href="https://github.com/mikeronald-fuentes" target="_blank"><img src="images/github.png" alt="github"></a>
-                    <a href="https://web.facebook.com/microezzz" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
                     <a href="https://www.linkedin.com/in/mike-ronald-fuentes-4ba7582a6/" target="_blank"><img src="images/LinkedIn.png" alt="linkedin"></a>
                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fuentesronald143@gmail.com" target="_blank"><img src="images/gmail.png" alt="gmail"></a>
                     <a href="#contact"><input type="button" value="Contact Me"></a>
@@ -99,7 +98,7 @@
     </section>
     <section id="projects">
         <div class="projects-container">
-            <div><h1>Projects</h1></div>
+            <div class="projects-container-title"><h1>Projects</h1></div>
             <div class="projects-output">
                 <div class="project-card" >
                     <div class="project-card-image">
@@ -142,24 +141,48 @@
                         <button>Visit Repository</button>
                     </a>
                 </div>
-                <div class="project-card">
-                    <div class="project-card-image">
-
-                    </div>
-                    <div class="project-card-description">
-
-                    </div>
-                    <div class="project-card-tech">
-                        
-                    </div>
-                </div>
-                <!-- Add more project cards as needed -->
             </div>
         </div>
     </section>
     <section id="contact">
-        <div class="container"></div>
+        <div class="contact-container">
+            <div class="contact-container-form" style="width: 40%; height: 100%; display: flex; padding: 20px 0 20px 0;">
+                <div class="contact-container-left">
+                    <h1><strong>Reach out to Me</strong></h1>
+                    <form id="contact-form">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" placeholder="Your Message" rows="5"></textarea>
+                        <button type="submit">Send</button>
+                        <div id="status-message"></div>
+                    </form>
+                </div>
+                
+            </div>
+            <div class="contact-container-right" style="width: 60%; height: 100%; display: flex; flex-direction: column;">
+                <div class="contact-info" style="width: 100%; height: 60%; display: flex; flex-direction: column; margin-left: 10%; margin-top: 7%;">
+                    <div class="info-name">Mike Ronald S. Fuentes</div>
+                    <div class="info-email">fuentesronald143@gmail.com</div>
+                    <div class="info-phonenumber">+639457163526</div>
+                </div>
+                <div class="contact-socials" style="display: flex; flex-direction: column; margin-left: 10%; height: 40%;">
+                    <h1 style="color: #1a1a1a;">Connect on social media!</h1>
+                    <div class="images">
+                            <a href="https://web.facebook.com/microezzz" target="_blank"><img src="images/fb_colored.png" alt="facebook"></a>
+                            <a href="https://www.instagram.com/microezzz/" target="_blank"><img src="images/insta.png" alt="insta"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <p>© 2024 Mike Ronald Fuentes</p>
+            </div>
+        </footer>
     </section>
+    
     </div>
+    
 </body>
 </html>
