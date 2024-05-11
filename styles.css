@@ -514,6 +514,7 @@ textarea {
 .info-name, .info-email, .info-phonenumber {
     font-family: 'Sawarabi';
     color: #1a1a1a;
+    width: 90%;
 }
 .info-name{
     font-size: 25px;
