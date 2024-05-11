@@ -165,7 +165,6 @@ button:hover{
     position: relative;
     width: 40%;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -252,27 +251,103 @@ button:hover{
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 10%; /* Adjust based on how much of the image you want to blend */
+    height: 10%; 
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #1A1A1D 90%);
-    z-index: 1; /* Ensures the gradient is above the image */
+    z-index: 1; 
 }
 
 .scroll-container {
-    height: 100vh; /* Set the height to the full viewport height */
-    overflow-y: scroll; /* Enable vertical scrolling */
-    scroll-snap-type: y mandatory; /* Enable vertical scroll snapping */
+    height: 100vh; 
+    overflow-y: scroll; 
+    scroll-snap-type: y mandatory; 
 }
 #landing, #about, #projects, #contact{
-    height: 100vh; /* Each section fills the viewport */
+    height: 100vh; 
     scroll-snap-align: start;
 }
 
 .about-container, .about-me-pic{
-    /* width: 80%; */
-    /* opacity: 0; Initially hidden */
-    transition: opacity 1s ease-out; /* Transition for the fade-in effect */
-    transform: translateY(20px); /* Start slightly downward */
+    transition: opacity 1s ease-out; 
+    transform: translateY(20px); 
     transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.about-container {
+    width: 90%; 
+    height: 80%; 
+    display: flex; 
+    flex-direction: row;
+}
+
+.about-me {
+    width: 60%;
+    display: flex; 
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.about-me-title{
+    height: 10%; 
+    font-size: 60px; 
+    font-family: 'Sawarabi'; 
+    padding-left: 60px;
+}
+
+.about-me-info {
+    width: 100%; 
+    height: 50%; 
+    background-color: #1a1a1a; 
+    border-radius: 50px; 
+    padding-left: 60px; 
+    padding-top: 20px; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+.about-me-info-greeting{
+    height: auto;
+    font-size: 30px; 
+    font-family: 'Sawarabi'; 
+    margin-bottom: 30px; 
+    width: 80%;
+}
+ .about-me-tech {
+    width: 100%; 
+    height: 40%; 
+    background-color: #1a1a1a; 
+    border-radius: 50px; 
+    padding-left: 60px; 
+    padding-top: 20px;
+ }
+
+ .about-me-pic {
+    width: 40%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: flex-end;
+ }
+
+ .about-me-pic img{
+    background-color: white; 
+    border-radius: 50px; 
+    height: 85%;
+ }
+ 
+#projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+.projects-container {
+    width: 90%; 
+    height: 80%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
 }
 
 .projects-output{
@@ -297,22 +372,10 @@ button:hover{
     position: relative;
 }
 
-.project-card-image {
-    width: 100%; 
-    height: 40%; 
-    
-}
-
 .project-card:hover .project-card-image {
     width: 100%; 
 }
-.project-card-image img{
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    border-top-left-radius: 10px; 
-    border-top-right-radius: 10px;
-}
+
 .project-right {
     word-wrap: break-word;
     width: 100%; 
@@ -323,6 +386,21 @@ button:hover{
     opacity: 1; 
     position: relative;
 }
+
+.project-card-image {
+    width: 100%; 
+    height: 40%; 
+    
+}
+
+.project-card-image img{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+}
+
 .project-card-description {
     word-wrap: break-word;
     padding-top: 10px;
