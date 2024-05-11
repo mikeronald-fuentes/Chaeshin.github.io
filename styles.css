@@ -718,6 +718,9 @@ meta {
 
 
 @media (max-width: 900px) {
+    .nav-links li {
+        padding: 0 10px;
+    }
     .landing-text-infos {
         padding-left: 4vh;
     }
@@ -752,13 +755,13 @@ meta {
         font-size: 18px;
     }
     .contact-container {
-        width: 80%; /* Adjusted width */
+        width: 80%; 
     }
     .contact-container {
         flex-direction: column;
     }
     .info-name, .info-phonenumber {
-        font-size: 15px; /* Adjusted font size */
+        font-size: 0; 
         width: auto;
         justify-content: center;
     }
@@ -853,6 +856,7 @@ meta {
     .circle{
         display: none;
     }
+    
     header {
         padding: 10px 1vh;
     }
@@ -864,11 +868,11 @@ meta {
         padding: 0 15px;
     }
     nav ul li a{
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .logo {
-        width: 150px;
+        width: 120px;
         height: 80px;
         margin-left: 1vh;
     }
@@ -901,6 +905,12 @@ meta {
 }
 
 @media (max-width: 600px) {
+    .logo {
+        margin-right: 0;
+    }
+    header {
+        flex-wrap: nowrap;
+    }
     .images {
         height: 50px;
     }
@@ -927,15 +937,17 @@ meta {
     }
     header{
         padding: 10px 1.5vh;
+        justify-content: space-between;
+
     }
     nav ul li a{
-        font-size: 10px;
+        font-size: 14px;
     }
     .nav-links li {
         padding: 1px 9px;
     }
     button{
-        font-size: 10px;
+        font-size: 14px;
         padding: 3px 5px;
         margin-left: 5px;
     }
@@ -946,7 +958,7 @@ meta {
     }
     
     .logo {
-        width: 70px;
+        width: 100px;
         height: 50px; 
         margin: 0;
     }
@@ -1026,6 +1038,25 @@ meta {
 }
 
 @media (max-width: 480px) {
+    header{
+        padding: 10px 1.5vh;
+        justify-content: space-between;
+
+    }
+    nav ul li a{
+        font-size: 10px;
+    }
+    .nav-links li {
+        padding: 1px 5px;
+    }
+    button{
+        font-size: 10px;
+        padding: 3px 5px;
+        margin-left: 5px;
+    }
+    .logo {
+        width: 60px;
+    }
     .landing-text {
         flex-direction: column-reverse;
     }
@@ -1128,7 +1159,7 @@ meta {
         font-size: 10px;
     }
     .nav-links li {
-        padding: 1px 9px;
+        padding: 1px 5px;
     }
     button{
         font-size: 10px;
@@ -1142,7 +1173,7 @@ meta {
     }
     
     .logo {
-        width: 70px;
+        width: 50px;
         height: 50px; 
         margin: 0;
     }
@@ -1162,9 +1193,7 @@ meta {
         height: 20px;
         margin-right: ;
     }
-    .animation-container{
-        display: none;
-    }
+    
     .level span{
         font-size: 2vh;
     }
@@ -1176,6 +1205,12 @@ meta {
         height: 15px;
         width: 15px;
         margin: .5vh .5vh;
+    }
+    .landing-text-infos h4 {
+        font-size: 18px;
+    }
+    .landing-text-infos h1 {
+        font-size: 18px;
     }
     .projects-container-title {
         font-size: 40px;
