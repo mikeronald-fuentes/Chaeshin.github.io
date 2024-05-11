@@ -325,7 +325,7 @@ button:hover{
     height: 100%; 
     display: flex; 
     justify-content: flex-end; 
-    align-items: flex-end;
+    align-items: center;
  }
 
  .about-me-pic img{
@@ -333,7 +333,7 @@ button:hover{
     border-radius: 50px; 
     height: 85%;
  }
- 
+
 #projects {
     display: flex;
     justify-content: center;
